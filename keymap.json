@@ -7,18 +7,6 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
-    "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
-  },
-  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "H": "pane::ActivatePreviousItem",
@@ -29,6 +17,10 @@
       "space m r": "pane::CloseItemsToTheRight",
       "space e": "pane::RevealInProjectPanel",
       "space o": "file_finder::Toggle",
+      "space O": "workspace::Open",
+      "space c f": "editor::Format",
+      "space r r": "task::Spawn",
+      "space r a": "task::Rerun",
     },
   },
 ]
