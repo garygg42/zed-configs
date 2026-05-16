@@ -7,6 +7,14 @@
 // from the command palette.
 [
   {
+    "context": "Editor && (os == windows || os == linux)",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-c": "editor::Copy",
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "H": "pane::ActivatePreviousItem",
@@ -21,6 +29,8 @@
       "space c f": "editor::Format",
       "space r r": "task::Spawn",
       "space r a": "task::Rerun",
+      "ctrl-j": "editor::AddSelectionBelow",
+      "ctrl-k": "editor::AddSelectionAbove",
     },
   },
 ]
