@@ -7,18 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "Editor && (os == windows || os == linux)",
-    "bindings": {
-      "ctrl-a": "editor::SelectAll",
-      "ctrl-c": "editor::Copy",
-      "ctrl-v": "editor::Paste",
-      "ctrl-N": "workspace::NewWindow",
-      "ctrl-R": "projects::OpenRecent",
-      "ctrl-H": "search::ToggleReplace",
-    },
-  },
-  {
-    "context": "Editor && vim_mode == normal",
+    "context": "vim_mode == normal && Editor",
     "bindings": {
       "H": "pane::ActivatePreviousItem",
       "L": "pane::ActivateNextItem",
@@ -35,7 +24,36 @@
       "ctrl-j": "editor::AddSelectionBelow",
       "ctrl-k": "editor::AddSelectionAbove",
       "g m": "outline::Toggle",
+    },
+  },
+  {
+    "context": "os == windows || os == linux",
+    "bindings": {
+      "ctrl-N": "workspace::NewWindow",
+      "ctrl-R": "projects::OpenRecent",
+      "ctrl-O": "workspace::Open",
+    },
+  },
+  {
+    "context": "(os == windows || os == linux) && Editor",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-c": "editor::Copy",
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
+    "context": "vim_mode == normal && Editor && (os == windows || os == linux)",
+    "bindings": {
       "ctrl-f": "vim::Search",
+    },
+  },
+  {
+    "context": "os == macos",
+    "bindings": {
+      "super-N": "workspace::NewWindow",
+      "super-R": "projects::OpenRecent",
+      "super-O": "workspace::Open",
     },
   },
 ]
