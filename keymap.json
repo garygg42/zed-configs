@@ -12,6 +12,8 @@
       "ctrl-a": "editor::SelectAll",
       "ctrl-c": "editor::Copy",
       "ctrl-v": "editor::Paste",
+      "ctrl-N": "workspace::NewWindow",
+      "ctrl-R": "projects::OpenRecent",
     },
   },
   {
