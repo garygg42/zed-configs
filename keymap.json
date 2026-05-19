@@ -14,6 +14,7 @@
       "ctrl-v": "editor::Paste",
       "ctrl-N": "workspace::NewWindow",
       "ctrl-R": "projects::OpenRecent",
+      "ctrl-H": "search::ToggleReplace",
     },
   },
   {
@@ -33,6 +34,8 @@
       "space r a": "task::Rerun",
       "ctrl-j": "editor::AddSelectionBelow",
       "ctrl-k": "editor::AddSelectionAbove",
+      "g m": "outline::Toggle",
+      "ctrl-f": "vim::Search",
     },
   },
 ]
