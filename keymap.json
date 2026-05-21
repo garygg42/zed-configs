@@ -24,6 +24,8 @@
       "ctrl-j": "editor::AddSelectionBelow",
       "ctrl-k": "editor::AddSelectionAbove",
       "g m": "outline::Toggle",
+      "g e": "editor::GoToDiagnostic",
+      "g E": "editor::GoToPreviousDiagnostic",
     },
   },
   {
